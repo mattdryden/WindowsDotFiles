@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo "Ensuring folder exists..."
+mkdir -p ~/.scripts
+
+echo "Copying scripts..."
+cp -a scripts/* ~/.scripts/
+
+echo "Copying profile..."
+cp -a .bash_profile ~/
+
+echo "Done. Enjoy!"
